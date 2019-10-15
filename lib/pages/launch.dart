@@ -1,21 +1,24 @@
 import 'package:flutter/material.dart';
 
-class FirstScreen extends StatelessWidget {
+class LaunchPage extends StatefulWidget {
+  @override
+  _LaunchPageState createState() => _LaunchPageState();
+}
+
+class _LaunchPageState extends State<LaunchPage> {
+  @override
+  void initState() {
+    Future.delayed(Duration(seconds: 2)).then((value) {
+      Navigator.of(context).pushReplacementNamed("/login");
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text('First Screen'),
-      ),
-      body: new Center(
-        child: new RaisedButton(
-          child: new Text('Launch second screen'),
-          onPressed: () {
-            Navigator.push(
-              context,
-              new MaterialPageRoute(builder: (context) => new SecondScreen()),
-            );
-          },
+    return Scaffold(
+      body: new Container(
+        child: new Center(
+          child: new Text("启动界面"),
         ),
       ),
     );
