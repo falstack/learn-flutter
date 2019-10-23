@@ -5,8 +5,15 @@ class HomePage extends StatelessWidget {
 
   final String title;
 
+  printNumber(num aNumber) {
+    print('The number is ${aNumber}.'); // 在控制台打印内容。
+  }
+
+  var number = 41; // 定义并初始化一个变量。
+
   @override
   Widget build(BuildContext context) {
+    printNumber(number); // 调用一个方法。
     return new Scaffold(
       appBar: new AppBar(
         title: new Text('主页'),
