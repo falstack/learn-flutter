@@ -4,6 +4,7 @@ import './pages/404.dart' show NotFoundPage;
 import './pages/login.dart' show LoginPage;
 import './pages/home.dart' show HomePage;
 import './pages/detail.dart' show DetailPage;
+import './pages/widgets/demo-01.dart' show RandomWordsApp;
 
 void main() => runApp(new MyApp());
 
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
         "/login": (context) => new LoginPage(),
         "/home": (context) => new HomePage(),
         "/detail": (context) => new DetailPage(),
+        "/widgets-demo-01": (context) => new RandomWordsApp(),
       },
       //没有路由可以进行匹配的时候
       onUnknownRoute: (RouteSettings setting) {

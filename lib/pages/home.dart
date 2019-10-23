@@ -9,7 +9,13 @@ class HomePage extends StatelessWidget {
     print('The number is ${aNumber}.'); // 在控制台打印内容。
   }
 
-  var number = 41; // 定义并初始化一个变量。
+  static const number = 41; // 定义并初始化一个编译时常量。
+  static const arr = [
+    {
+      'name': 'hello weight',
+      'path': '/widgets-demo-01'
+    }
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -20,12 +26,12 @@ class HomePage extends StatelessWidget {
       ),
       body: new Container(
           child: new ListView.builder(
-              itemCount: 10,
+              itemCount: arr.length,
               itemBuilder: (context, index) {
                 return new ListTile(
-                  title: new Text("第$index项"),
+                  title: new Text(arr[index]['name']),
                   onTap: () {
-                    Navigator.of(context).pushNamed("/detail");
+                    Navigator.of(context).pushNamed(arr[index]['path']);
                   },
                 );
               })),
