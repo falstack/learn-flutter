@@ -11,14 +11,9 @@ class HomePage extends StatelessWidget {
 
   static const number = 41; // 定义并初始化一个编译时常量。
   static const arr = [
-    {
-      'name': 'hello weight',
-      'path': '/widgets-demo-01'
-    },
-    {
-      'name': '退出登录',
-      'path': '/logout'
-    }
+    {'name': '随机列表并包含点赞', 'path': '/widgets-demo-01'},
+    {'name': '测试', 'path': '/widgets-demo-02'},
+    {'name': '退出登录', 'path': '/logout'}
   ];
 
   @override

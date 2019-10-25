@@ -4,7 +4,8 @@ import './pages/404.dart' show NotFoundPage;
 import './pages/login.dart' show LoginPage;
 import './pages/home.dart' show HomePage;
 import './pages/logout.dart' show LogoutPage;
-import './pages/widgets/demo-01.dart' show RandomWordsApp;
+import './pages/widgets/demo-01.dart' show WidgetDemo01App;
+import './pages/widgets/demo-02.dart' show WidgetDemo02App;
 
 void main() => runApp(new MyApp());
 
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
         "/login": (context) => new LoginPage(),
         "/home": (context) => new HomePage(),
         "/logout": (context) => new LogoutPage(),
-        "/widgets-demo-01": (context) => new RandomWordsApp(),
+        "/widgets-demo-01": (context) => new WidgetDemo01App(),
+        "/widgets-demo-02": (context) => new WidgetDemo02App(),
       },
       //没有路由可以进行匹配的时候
       onUnknownRoute: (RouteSettings setting) {
