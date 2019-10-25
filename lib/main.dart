@@ -6,6 +6,7 @@ import './pages/home.dart' show HomePage;
 import './pages/logout.dart' show LogoutPage;
 import './pages/widgets/demo-01.dart' show WidgetDemo01App;
 import './pages/widgets/demo-02.dart' show WidgetDemo02App;
+import './pages/widgets/demo-03.dart' show WidgetDemo03App;
 
 void main() => runApp(new MyApp());
 
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
         "/logout": (context) => new LogoutPage(),
         "/widgets-demo-01": (context) => new WidgetDemo01App(),
         "/widgets-demo-02": (context) => new WidgetDemo02App(),
+        "/widgets-demo-03": (context) => new WidgetDemo03App(),
       },
       //没有路由可以进行匹配的时候
       onUnknownRoute: (RouteSettings setting) {
