@@ -14,6 +14,10 @@ class HomePage extends StatelessWidget {
     {
       'name': 'hello weight',
       'path': '/widgets-demo-01'
+    },
+    {
+      'name': '退出登录',
+      'path': '/logout'
     }
   ];
 

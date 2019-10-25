@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
-class DetailPage extends StatefulWidget {
+class LogoutPage extends StatefulWidget {
   @override
-  _DetailPageState createState() => _DetailPageState();
+  _LogoutPageState createState() => _LogoutPageState();
 }
 
-class _DetailPageState extends State<DetailPage> {
+class _LogoutPageState extends State<LogoutPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: new AppBar(
-        title: new Text('详情页'),
+        title: new Text('退出页面'),
       ),
       body: SafeArea(
         child: new Container(
@@ -19,7 +19,6 @@ class _DetailPageState extends State<DetailPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              new Text("详细界面"),
               new RaisedButton(
                 onPressed: () {
                   Navigator.of(context).pushNamedAndRemoveUntil(
