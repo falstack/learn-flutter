@@ -14,6 +14,7 @@ class HomePage extends StatelessWidget {
     {'name': '随机列表并包含点赞', 'path': '/widgets-demo-01'},
     {'name': '使用 MD 脚手架', 'path': '/widgets-demo-02'},
     {'name': '生成带状态的组件', 'path': '/widgets-demo-03'},
+    {'name': '测试 HTTP', 'path': '/widgets-demo-04'},
     {'name': '退出登录', 'path': '/logout'}
   ];
 

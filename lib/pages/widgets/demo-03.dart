@@ -53,6 +53,7 @@ class ShoppingList extends StatefulWidget {
 
   final List<Product> products;
 
+  // createState 类似于 created 首次插入到树中时会被调用
   @override
   _ShoppingListState createState() => new _ShoppingListState();
 }
